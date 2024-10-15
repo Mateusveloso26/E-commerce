@@ -4,14 +4,14 @@
         "id": 1, 
         "title": "Airpods Apple, com Estojo de Recarga, Bluetooth", 
         "description": "Airpods Apple, com Estojo de Recarga, Bluetooth, Branco\nO Novo AirPods traz uma experiência nova em usar fones de ouvido sem fio. É só tirá-los do estojo e estão prontos para uso com seu iPhone, Apple Watch, iPad ou Mac. Ele oferece cinco horas de som e três horas para conversar com apenas uma carga. Eles acompanham seu ritmo graças ao estojo que proporciona várias cargas adicionais para mais de 24 horas de uso." ,
-        "price":120,
+        "price":320,
         "cover": "https://i.imgur.com/uXrbyfA.jpg"
       },
       { 
         "id": 2, 
         "title": "Notebook Gamer Lenovo Gaming 3i Intel Core i5-11300H", 
         "description": "Lenovo ideapad Gaming 3i\nNovo design com 11ª Geração de Processadores Intel Core i5-11300H e placa de vídeo NVIDIA GeForce GTX 1650 4GB. Ideal para gamers e usuários que também precisam de alta performance. Com tela de 15.6'' Full HD WVA Antirreflexo para melhor definição de imagem e cores. O armanezamento SSD PCIe NVMe é 10x mais rápido* que um HDD 2.5” SATA, você terá mais segurança ao armazenar seus dados. O teclado retroiluminado em LED branco, deixa o computador mais atraente e também favorece a performance para jogos em lugares com pouca iluminação.",
-        "price": 379.9,
+        "price": 2900.00,
         "cover": "https://i.imgur.com/bM5IUKe.jpg"
       },
       { 
@@ -41,7 +41,22 @@
         "description": "O smartwatch que oferece o mais completo conjunto de funções de monitoramento para o acompanhamento da Saúde e do Bem-Estar de uma maneira precisa e confiável. Possui os recursos essenciais e mais avançados para medir e acompanhar o estado da sua Saúde, funções como monitor de Batimento Cardíaco, Pressão Arterial, Eletrocardiograma, Oxímetro, Detecção de Queda e Chamada de Emergência, programa de Coaching do Sono para monitorar e melhorar a qualidade do seu Sono , além da Bioimpedância para avaliar a composição corporal de maneira rápida e interativa, e verificar a evolução os resultados dos exercícios refletidos no seu corpo. Possui uma série de funções avançadas de treinos com mais de 95 modalidades. ",
         "price": 1139.00,
         "cover": "https://i.imgur.com/Ua4bURp.jpg"
+      },
+      { 
+        "id": 7, 
+        "title": "Mouse sem fio Logitech MX Master 3S com Sensor Darkfield", 
+        "description": "Resolução máxima de 8000 DPI. Até 70 dias com uma carga completa. Bateria recarregável (500mAh). Conexão com até 3 dispositivos. 3 horas de uso com uma carga de 1 minuto. Tecnologia sem fio avançada de 2,4 GHz. Tracking em qualquer superficíe. Cliques Silenciosos. Rolagem MagSpeed. Design Ergonômico. Resolução máxima de 8000 DPI. Até 70 dias com uma carga completa. ",
+        "price": 650.00,
+        "cover": "https://imgur.com/Rga7g43.jpg"
+      },
+      { 
+        "id": 8, 
+        "title": "Teclado Gamer Mecânico Redragon Lakshmi", 
+        "description": "O Redragon LAKSHMI reúne o que há de melhor em um teclado para seu setup, entrega performance profissional, evita Double Clicks e possui o dobro de vida útil comparado a um teclado mecânico convencional, é o teclado perfeito para quem procura um excelente upgrade para seu setup.",
+        "price": 150.00,
+        "cover": "https://imgur.com/8lDPoa2.jpg"
       }
       
     ]
   }
+

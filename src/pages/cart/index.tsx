@@ -1,27 +1,70 @@
-export function Cart (){
-    return(
-        <div className="w-full max-w-7xl mx-auto">
-            <h1 className="font-medium text-2xl text-center my-5">Sacola de compras</h1>
+import { useContext } from "react";
+import { CartContext } from "../../content/CartContext";
+import { Link } from "react-router-dom";
 
-            <section className="flex items-center justify-between border-b-2 border-gray-300">
-            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-4-anc-select-202409_FV1_FMT_WHH?wid=752&hei=636&fmt=jpeg&qlt=90&.v=1725502553451" alt="logo do produto" className="w-24" />
-            <strong>Preço: R$ 1000</strong>
-            <div className="flex items-center justify-center gap-3">
-                <button className="bg-slate-600 px-2 text-white font-medium flex items-center justify-center">
-                    -
-                </button>
-                1
-                <button className="bg-slate-600 px-2 text-white font-medium flex items-center justify-center">
-                    +
-                </button>
-            </div>
-            <strong className="float-right">
-                SubTotal: R$ 1000
-            </strong>
+export function Cart() {
+  const { cart, total, addItemCart, removeItemCart } = useContext(CartContext);
 
-            </section>
+  return (
+    <div className="w-full h-screen max-w-7xl mx-auto">
+      <h1 className="font-medium text-2xl text-center my-5">
+        Sacola de compras
+      </h1>
 
-            <p className="font-bold mt-4">Total: R$1000</p>
+      {cart.length === 0 && (
+        <div className="flex flex-col items-center justify-center">
+          <p className="font-medium">Ops seu carrinho está vazio...</p>
+          <Link
+            to="/"
+            className="bg-slate-600 my-3 p-1 px-3 text-white font-medium rounded"
+          >
+            Acessar produtos
+          </Link>
         </div>
-    )
+      )}
+
+      {cart.map((item) => (
+        <section
+          key={item.id}
+          className="flex items-center justify-between border-b-2 border-gray-300  max-w-lg: mx-4 "
+        >
+          <img src={item.cover} alt={item.title} className="w-24" />
+          <strong>
+            Preço:{" "}
+            {item.price.toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </strong>
+          <div className="flex items-center justify-center gap-3">
+            <button
+              className="bg-slate-600 px-2 text-white font-medium flex items-center justify-center"
+              onClick={() => removeItemCart(item)}
+            >
+              -
+            </button>
+            {item.amount}
+            <button
+              className="bg-slate-600 px-2 text-white font-medium flex items-center justify-center"
+              onClick={() => addItemCart(item)}
+            >
+              +
+            </button>
+          </div>
+          <strong className="float-right">
+            SubTotal:{" "}
+            {item.total.toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </strong>
+        </section>
+      ))}
+      <div className="flex flex-col items-center mt-4 gap-2 justify-left">
+        {cart.length >= 1 && (
+          <p className="font-bold mt-4  max-w-lg: mx-4">Total: {total}</p>
+        )}
+      </div>
+    </div>
+  );
 }
