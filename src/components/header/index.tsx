@@ -41,7 +41,7 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link to="/">
+          <Link to="/favorite">
             <CiHeart size={28} color="#dc2626" />
           </Link>
 
@@ -58,6 +58,23 @@ export function Header() {
             <CiUser size={28} color="#fff" />
           </Link>
         </div>
+      </nav>
+      <nav className="bg-neutral-900 h-14 flex items-center justify-center gap-16 uppercase font-bold">
+        <Link to="/notebook" className=" hover:text-red-600 duration-300">
+          Promoção
+        </Link>
+        <Link to="/notebook" className=" hover:text-red-600 duration-300">
+          Notebook
+        </Link>
+        <Link to="/perifericos" className=" hover:text-red-600 duration-300">
+          Periféricos
+        </Link>
+        <Link to="/notebook" className=" hover:text-red-600 duration-300">
+          PC Gamer
+        </Link>
+        <Link to="/notebook" className=" hover:text-red-600 duration-300">
+          hardware
+        </Link>
       </nav>
     </header>
   );

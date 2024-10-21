@@ -6,7 +6,9 @@ import { api } from "../../services/api";
 import { CartContext } from "../../content/CartContext";
 import { Link } from "react-router-dom";
 import { Slider } from "../../components/slider";
-
+import Banner3 from "../../assets/banner3.png";
+import Anuncio from "../../assets/anuncio.png";
+import Anuncio2 from "../../assets/anuncio2.png";
 export interface ProductProps {
   id: number;
   title: string;
@@ -16,7 +18,7 @@ export interface ProductProps {
 }
 
 export function Home() {
-  const { addItemCart } = useContext(CartContext);
+  const { addItemCart,addItemFavorite } = useContext(CartContext);
   const [products, setProducts] = useState<ProductProps[]>([]);
 
   useEffect(() => {
@@ -32,16 +34,20 @@ export function Home() {
     addItemCart(product);
   }
 
+  function handleAddFavorite(product: ProductProps) {
+    addItemFavorite(product)
+  }
+
   
   return (
     <div>
       <Slider />
       <div className="flex my-4 gap-4 justify-center">
         <Link to="/">
-          <img src="public\assets\anuncio.png" alt="banner" className="hover:brightness-150" />
+          <img src={Anuncio} alt="banner" className="hover:brightness-150" />
         </Link>
-        <Link to="/">
-          <img src="public\assets\anuncio2.png" alt="banner" className="hover:brightness-150" />
+        <Link to="/notebook">
+          <img src={Anuncio2} alt="banner notebook" className="hover:brightness-150" />
         </Link>
       </div>
 
@@ -50,9 +56,9 @@ export function Home() {
           Produtos em alta
         </h1>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-10 ">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 my-10 ">
           {products.map((product) => (
-            <section key={product.id} className="w-full  ">
+            <section key={product.id} className="w-full">
               <Link to={`/product/${product.id}`}>
                 <img
                   className="w-5/6 m-auto rounded-lg max-h-60 mb-2 duration-300 box-border resize-none  hover:scale-105"
@@ -76,20 +82,24 @@ export function Home() {
                   <PiBagThin size={20} color="#fff" />
                 </button>
                 <button className="bg-zinc-900 p-1 rounded">
-                  <CiHeart size={20} color="#fff" />
+                  <CiHeart size={20} color="#fff" 
+                  onClick={() => handleAddFavorite(product)}
+                  />
                 </button>
               </div>
             </section>
           ))}
         </div>
-        <div className="mt-20">
+
+        <div className="my-10">
           <Link to="/">
-            <img src="public\assets\banner3.png" alt="banner da loja" />
+            <img src={Banner3} alt="banner da loja" />
           </Link>
         </div>
+
       </main>
 
-      <div className="bg-black h-auto flex flex-col md:flex-row w-full my-16 justify-center items-center  text-white p-6  shadow-lg">
+      <div className="bg-black h-auto flex flex-col md:flex-row w-full mt-10 justify-center items-center  text-white p-6  shadow-lg">
         <div className="text-center md:text-left mb-6 mx-10 md:mb-0">
           <h2 className="text-3xl font-bold mb-2">
             Cadastre-se em nossa newsletter

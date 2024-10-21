@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import BannerPrimario from "../../assets/bannerPrimario.png";
+import BannerSec from "../../assets/bannerSec.png";
 
 export function Slider() {
   return (
@@ -11,11 +13,11 @@ export function Slider() {
       }}
       loop={true}
     >
-      <SwiperSlide>
-        <img src="/assets/banner.png" alt="Banner 1" />
+      <SwiperSlide className="flex items-center justify-center">
+        <img src={BannerPrimario} alt="Banner 1" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="/assets/banner2.png" alt="Banner 2" />
+        <img src={BannerSec} alt="Banner 2" />
       </SwiperSlide>
     </Swiper>
   );

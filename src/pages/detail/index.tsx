@@ -57,7 +57,7 @@ export function ProductDetail() {
                 </button>
               </div>
             </div>
-            <hr className="mt-10" / >
+            <hr className="mt-10" />
           </section>
         )}
       </main>

@@ -8,6 +8,8 @@ interface CartContextProps {
   addItemCart: (newItem: ProductProps) => void;
   removeItemCart: (product: CartProps) => void;
   total: string;
+  favorites: CartProps[]; 
+  addItemFavorite: (newItem: ProductProps) => void; 
 }
 
 interface CartProps {
@@ -26,7 +28,9 @@ export const CartContext = createContext({} as CartContextProps);
 
 function CartProvider({ children }: CartProviderProps) {
   const [cart, setCart] = useState<CartProps[]>([]);
+  const [favorites, setFavorites] = useState<CartProps[]>([]);
   const [total, setTotal] = useState("");
+  
 
   function addItemCart(newItem: ProductProps) {
     toast.success("Produto adicionado ao carrinho!", {
@@ -92,6 +96,30 @@ function CartProvider({ children }: CartProviderProps) {
     setTotal(resultFormat);
   }
 
+  function addItemFavorite(newItem: ProductProps) {
+    toast.success("Produto adicionado aos favoritos!", {
+      style: {
+        backgroundColor: "#121212",
+        color: "#fff",
+      },
+    });
+
+    // Verifica se o item já está nos favoritos
+    const indexItemInFavorites = favorites.findIndex((item) => item.id === newItem.id);
+    if (indexItemInFavorites !== -1) {
+      // Se o item já estiver nos favoritos, não faça nada
+      return;
+    }
+
+    // Adiciona o item na lista de favoritos
+    const data = {
+      ...newItem,
+      amount: 1,
+      total: newItem.price,
+    };
+
+    setFavorites((prevFavorites) => [...prevFavorites, data]);
+  }
   return (
     <CartContext.Provider
       value={{
@@ -100,6 +128,8 @@ function CartProvider({ children }: CartProviderProps) {
         addItemCart,
         removeItemCart,
         total,
+        favorites,
+        addItemFavorite
       }}
     >
       {children}

@@ -26,9 +26,9 @@ export function Cart() {
       {cart.map((item) => (
         <section
           key={item.id}
-          className="flex items-center justify-between border-b-2 border-gray-300  max-w-lg: mx-4 "
+          className="flex items-center justify-between border-b-2 border-gray-300  max-w-lg: mx-4 my-3"
         >
-          <img src={item.cover} alt={item.title} className="w-24" />
+          <img src={item.cover} alt={item.title} className="w-32" />
           <strong>
             Preço:{" "}
             {item.price.toLocaleString("pt-BR", {
