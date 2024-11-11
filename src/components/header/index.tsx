@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { PiBagThin } from "react-icons/pi";
-import { CiHeart } from "react-icons/ci";
+import { FaHeart } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { useRef } from "react";
@@ -30,7 +30,7 @@ export function Header() {
             ref={inputRef}
             type="text"
             placeholder="O que você procura?"
-            className="h-10 rounded-md px-10 w-full text-black focus:outline-none focus:ring-2 focus:ring-red-500"
+            className="h-10 rounded-md px-10 w-full text-black focus:outline-none"
           />
           <CiSearch
             size={24}
@@ -42,7 +42,7 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <Link to="/favorite">
-            <CiHeart size={28} color="#dc2626" />
+            <FaHeart  size={28} color="red" />
           </Link>
 
           <Link className="relative" to="/cart">
@@ -60,7 +60,7 @@ export function Header() {
         </div>
       </nav>
       <nav className="bg-neutral-900 h-14 flex items-center justify-center gap-16 uppercase font-bold">
-        <Link to="/notebook" className=" hover:text-red-600 duration-300">
+        <Link to="/" className=" hover:text-red-600 duration-300">
           Promoção
         </Link>
         <Link to="/notebook" className=" hover:text-red-600 duration-300">
@@ -69,10 +69,10 @@ export function Header() {
         <Link to="/perifericos" className=" hover:text-red-600 duration-300">
           Periféricos
         </Link>
-        <Link to="/notebook" className=" hover:text-red-600 duration-300">
+        <Link to="/" className=" hover:text-red-600 duration-300">
           PC Gamer
         </Link>
-        <Link to="/notebook" className=" hover:text-red-600 duration-300">
+        <Link to="/" className=" hover:text-red-600 duration-300">
           hardware
         </Link>
       </nav>

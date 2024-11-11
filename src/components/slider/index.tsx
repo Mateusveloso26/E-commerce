@@ -7,6 +7,8 @@ export function Slider() {
   return (
     <Swiper
       slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
       autoplay={{
         delay: 3000,
         disableOnInteraction: false,
