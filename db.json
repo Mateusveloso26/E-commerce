@@ -69,7 +69,7 @@
         "title": "Notebook Gamer Acer Nitro V15 Intel Core i5-13420H", 
         "description": "O Nitro V15 conta com a placa de vídeo NVIDIA GeForce RTX 3050 com 6 GB de memória dedicada GDDR6 com eficiência total (TGP) de até 80W que oferece o melhor desempenho para você aproveitar ao máximo suas horas de jogatina.",
         "price": 6000.00,
-        "cover": "https://imgur.com/lIDFJEN.jpg",
+        "cover": "https://imgur.com/leqKWbO.jpg",
         "category": "notebooks"
       },
       { 
@@ -77,52 +77,10 @@
         "title": "Notebook Gamer Gigabyte G5 MF Intel Core i5-12500H", 
         "description": "O Laptop Gaming GIGABYTE traz novos elementos de jogos de tendências futuras, combinados com desempenho poderoso da próxima geração. O laptop para jogos GIGABYTE está equipado com processador Intel Core i5 de 12ª geração, GPUs para laptop NVIDIA GeForce RTX série 40 e uma tela com alta taxa de atualização. Com uma ferramenta para cada tarefa, este laptop pode estar ao seu lado enquanto você percorre diferentes funções, apoiando mais do que a luta e também o seu dia a dia.",
         "price": 6999.99,
-        "cover": "https://imgur.com/fgtRsCD.jpg",
-        "category": "notebooks"
-      },
-      { 
-        "id": 11, 
-        "title": "Notebook Samsung Galaxy Book4, Windows 11 Home", 
-        "description": "O Galaxy Book4 é envolto em um corpo de metal inteiriço que pesa apenas 1,55 kg, por isso é elegante, compacto e extremamente portátil. E com um grande display Full HD de 15,6”, você pode apreciar uma imagem nítida e vibrante na tela enquanto relaxa com seus vídeos e filmes favoritos.",
-        "price": 2599.99,
-        "cover": "https://imgur.com/kZ4Endc.jpg",
-        "category": "notebooks"
-      },
-      { 
-        "id": 12, 
-        "title": "Notebook Samsung Galaxy Book3 Ultra NP960XFH-XA2BR Intel Core i9", 
-        "description": "O menor preço encontrado no Brasil para Notebook Samsung Galaxy Book3 Ultra NP960XFH-XA2BR Intel Core i9 13900H 16 32GB SSD 1 TB Windows 11 GeForce RTX 4070 .",
-        "price": 11000.00,
-        "cover": "https://imgur.com/lpleDmt.jpg",
-        "category": "notebooks"
-      },
-      { 
-        "id": 13, 
-        "title": "Notebook Lenovo IdeaPad Intel Core i i3-1215U 4GB 256GB SSD", 
-        "description": "O IdeaPadT 1i eleva sua categoria de notebooks com um processador Intel® supereficiente de 12ª geração em um chassi fino e compacto de 17,9 mm que facilita a multitarefa enquanto aumenta a eficiência energética com até 11 horas de duração da bateria e carga rápida.",
-        "price": 2300.00,
-        "cover": "https://imgur.com/vcHVM4Q.jpg",
-        "category": "notebooks"
-      },
-      { 
-        "id": 14, 
-        "title": "Notebook Acer Aspire 5 A515-57-55B8 Intel Core I5 ", 
-        "description": "Notebook Acer Aspire 5 A515-57-55B8, Cinza aço, Processador Intel Core i5 de decima segunda geração com 8 núcleos (4 P-cores 4 E-cores) 12 threads com frequencia de ate 4.40GHz, memoria RAM de 8GB DDR4-3200MHz (4 GB em módulo SO-DIMM + 4 GB em módulo SO-DIMM) Expansível até 32GB DDR4, armazenamento SSD 256 GB SSD NVMe PCIe 4.0 x4 M.2 2280, Tela TN FHD (1920 x 1080) taxa de atualização 60Hz, teclado Membrana em português do Brasil padrão (ABNT 2) Teclado numerico Independente e sistema operacional Windows 11.",
-        "price": 2400.00,
-        "cover": "https://imgur.com/Z5L2GpU.jpg",
-        "category": "notebooks"
-      },
-      { 
-        "id": 15, 
-        "title": "Notebook Gamer SuperFrame Force Intel Core i5 12450H ", 
-        "description": "O novo Notebook Gamer SuperFrame Force é uma máquina verdadeiramente impressionante, projetada para elevar sua experiência de jogo a um novo patamar. Equipado com um poderoso processador Intel Core i5, uma placa de vídeo NVIDIA RTX 4050, 16GB de memória DDR4 e um SSD de 1TB, este notebook é uma verdadeira fera no mundo dos jogos. Além do desempenho de ponta, o Notebook Gamer SuperFrame Force também possui um design elegante e uma tela de alta resolução que proporciona cores vibrantes e detalhes nítidos.",
-        "price": 6000.00,
-        "cover": "https://imgur.com/e7z4WUV.jpg",
+        "cover": "https://imgur.com/4fqIzYk.jpg",
         "category": "notebooks"
       }
-  
-      
-      
+     
     ]
   }
 
