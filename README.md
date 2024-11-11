@@ -1,6 +1,7 @@
 # E-commerce com TypeScript e React
 
-![screencapture-localhost-5173-2024-10-14-23_22_12](https://github.com/user-attachments/assets/35608d65-1489-4c33-94af-9f8cda868279)
+![screencapture-localhost-5173-2024-10-20-19_54_44](https://github.com/user-attachments/assets/56690afc-f86b-4d8f-9797-c75a0a4fa7b1)
+
 
 
 ## Descrição
